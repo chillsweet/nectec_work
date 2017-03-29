@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SIM</title>
+
+
+    <script type="text/javascript" src="lib/jquery/dist/core.js"></script>
+    <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="lib/jquery/dist/jquery.slim.js"></script>
+    <script type="text/javascript" src="lib/jquery/external/sizzle/dist/sizzle.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/alert.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/button.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/carousel.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/collapse.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/dropdown.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/modal.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/popover.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/scrollspy.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/tab.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/tooltip.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/transition.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/affix.js"></script>
+
+    <link rel="stylesheet" href="css/control.css" media="screen" title="no title" charset="utf-8">
+    <!-- Bootstrap Core CSS -->
+    <script type="text/javascript" src="lib/angular/angular.js">
+    </script>
+
+    <script src="lib/jquery/dist/jquery.js" charset="utf-8"></script>
+    <link href="lib/template/css/bootstrap.min.css" rel="stylesheet">
+    <script src="lib/jquery/dist/jquery.slim.js" charset="utf-8"></script>
+    <!-- Custom CSS -->
+    <link href="lib/template/css/modern-business.css" rel="stylesheet">
+    <script src="lib/bootstrap/js/tooltip.js" charset="utf-8"></script>
+    <!-- Custom Fonts -->
+    <link href="lib/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/modules/index.mudule.js">
+    </script>
+    <script src="js/tool.js" charset="utf-8"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.lib/template/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar">
+
+                    </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="/">System archives the Information Machine</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" >
+                  <li>
+                      <a href="/">หน้าแรก</a>
+                  </li>
+                    <li>
+                        <a href="/about">เกี่ยวกับโครงการ</a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:3000">เจ้าหน้าที่</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+
+
+
+
+
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image:url('img/w2g/cassava-leaf.png');"></div>
+            <div class="carousel-caption">
+                <h2>พืชพื้นที่</h2>
+            </div>
+        </div>
+        <% for(var key of value) {%>
+          <% if(key.ty_con_status == 1 && key.ty_con_name != "พืชพื้นที่"){%>
+        <div class="item">
+            <div class="fill" style="background-image:url('<%= key.ty_con_part %>');"></div>
+            <div class="carousel-caption">
+                <h2><%= key.ty_con_name %></h2>
+            </div>
+        </div>
+          <% }  %>
+        <% }  %>
+        <div class="item">
+            <div class="fill" style="background-image:url('img/w2g/rice-field-in-the-cloud.jpg');"></div>
+            <div class="carousel-caption">
+                <h2>พืชไร่</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!-- Controls -->
+
+
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div  class="container" style="margin-top:30px;" ng-controller="ImoCtroller">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+
+
+            <div class=""  >
+              <% for(var val of value) {%>
+                  <% if ( val.ty_con_status == 1) { %>
+              <div class="col-md-4" >
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+
+                          <img src="<%= val.ty_con_part %>"  alt="" class="img-rounded im">
+
+                      </div>
+                      <div class="panel-body">
+                          <h4><%= val.ty_con_name %></h4>
+                          <a href="<%= val.ty_con_link %>" id="element<%= val.ty_con_id %>" ng-click='setCookie(<%= val.ty_con_id %>)' class="btn  set"  data-toggle="popover"   data-content="new">   อ่านเพิ่มเติม</a>
+                      </div>
+                  </div>
+              </div>
+              <%}%>
+            <%}%>
+            </div>
+
+
+
+        </div>
+        <!-- /.row -->
+<hr>
+
+
+        <!-- Call to Action Section -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="lib/template/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/template/js/bootstrap.min.js"></script>
+
+
+    <!-- Script to Activate the Carousel -->
+
+    <style media="screen">
+    .popover-content{
+      color: red;
+    }
+    .set{
+
+      background: #DAF7A6;
+      color: #1375B0;
+      font-weight: bold;
+    }
+    </style>
+    <script>
+
+    $.get('/update').done(function(val){
+        for (var list of val) {
+          $('#element'+list.con_ty_id).popover('show',500);
+
+        }
+    });
+
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

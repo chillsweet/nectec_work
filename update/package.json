@@ -1,0 +1,40 @@
+{
+  "name": "update",
+  "version": "1.0.0",
+  "description": "system update raspberrypi",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development node app.js"
+  },
+  "keywords": [
+    "sky"
+  ],
+  "author": "subaru",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "child_process": "^1.0.2",
+    "dateformat": "^1.0.12",
+    "del": "^2.2.2",
+    "diskusage": "^0.1.5",
+    "download": "^5.0.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "fs": "0.0.1-security",
+    "gentelella": "^1.3.0",
+    "html": "^1.0.0",
+    "is-connected": "0.0.7",
+    "jsonfile": "^2.4.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "node-wget": "^0.4.2",
+    "ping": "^0.2.1",
+    "request": "^2.75.0",
+    "socket.io": "^1.5.0",
+    "socket.io-client": "^1.5.1",
+    "supertest": "^2.0.1",
+    "wget": "0.0.1",
+    "wget-improved": "^1.3.0"
+  }
+}

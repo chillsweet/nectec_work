@@ -1,0 +1,27 @@
+.im{
+  width: 325px;
+  height: 243px;
+  -webkit-filter: opacity(74%);
+  filter: opacity(74%);
+
+}
+.im:hover{
+  width: 325px;
+  height: 243px;
+  -webkit-filter: opacity(100%);
+  filter: opacity(100%);
+}
+.control-img-head{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.logo{
+  margin-bottom: 30px;
+  img{
+    width: 50px;
+    height: 36px;
+
+  }
+}

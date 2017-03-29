@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>update machine</title>
+    <!-- start css bootstrap -->
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap-theme.css" media="screen" title="no title">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- Custom styles for this template -->
+
+
+    <link href="/css/dashboard.css" rel="stylesheet">
+
+    <link rel="/css/ie10-viewport-bug-workaround.css" href="/css/master.css" media="screen" title="no title">
+
+  </head>
+
+  <body ng-app="myapp" ng-controller="index">
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/update/now">UPDATE MACHINE</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Settings</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Udate Application</h1>
+        <p>
+          Last update: Fri  7 Oct 2016 09:27:38
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="/update" role="button">Update Now </a></p>
+      </div>
+    </div>
+    <div class="container" >
+      <div class="row">
+
+          <h2 class="sub-header">List Content</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Number</th>
+                  <th>Name</th>
+                  <th>type</th>
+                  <th>video</th>
+                  <th>Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>
+
+                    <button type="button" class="btn btn-danger">Delet</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td><button type="button" class="btn btn-danger">Delet</button></td>
+
+              </tbody>
+            </table>
+          </div>
+
+      </div>
+    </div>
+
+
+  </body>
+
+  <!-- start js bootstrap -->
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/button.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/carousel.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/alert.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/collapse.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/dropdown.js" charset="utf-8"></script>
+    <script src="/js/holder.min.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/modal.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/popover.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/scrollspy.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/tab.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/tooltip.js" charset="utf-8"></script>
+    <script src="/lib/bootstrap/js/transition.js" charset="utf-8"></script>
+  <!-- end js bootstrap -->
+
+  <!-- start  js angular -->
+    <script src="/lib/angular/angular.min.js" charset="utf-8"></script>
+    <script src="/js/app.js" charset="utf-8"></script>
+    <script src="/js/controller/index.controller.js" charset="utf-8"></script>
+    <script src="/js/tool.js" charset="utf-8"></script>
+  <!-- end  js angular -->
+
+
+  <!-- start  js jquery -->
+  <script src='/lib/jquery/src/ajax.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/attributes.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/callbacks.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/core.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/css.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/data.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/deferred.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/deprecated.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/dimensions.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/effects.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/event.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/jquery.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/manipulation.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/offset.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/queue.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/selector-native.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/selector-sizzle.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/selector.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/serialize.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/traversing.js' charset=utf-8></script>
+  <script src='/lib/jquery/src/wrap.js' charset=utf-8></script>
+    <script src="/lib/jquery/dist/core.js" charset="utf-8"></script>
+    <script src="/lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="/lib/jquery/src/jquery.js" charset="utf-8"></script>
+    <script src="/lib/jquery/dist/jquery.slim.min.js" charset="utf-8"></script>
+
+    <!-- end js jquery -->
+</html>

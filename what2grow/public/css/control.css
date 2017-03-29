@@ -1,0 +1,49 @@
+/* line 1, ../sass/control.scss */
+.im {
+  width: 325px;
+  height: 243px;
+  -webkit-filter: opacity(74%);
+  filter: opacity(74%);
+}
+
+#icon span{
+
+  display: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+#icon:hover span {
+ display: block;
+}
+/* line 8, ../sass/control.scss */
+.im:hover {
+  width: 325px;
+  height: 243px;
+  -webkit-filter: opacity(100%);
+  filter: opacity(100%);
+}
+
+/* line 14, ../sass/control.scss */
+.control-img-head {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.des{
+  width: 400px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+/* line 20, ../sass/control.scss */
+.logo {
+  margin-bottom: 30px;
+}
+/* line 22, ../sass/control.scss */
+.logo img {
+  width: 50px;
+  height: 36px;
+}

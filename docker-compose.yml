@@ -1,0 +1,57 @@
+version: "2"
+services:
+
+    nginx:
+      build: ./nginx
+      links:
+        - what2grow:what2grow
+        - update:update
+        - app1:app1
+        - app2:app2
+      ports:
+        - 80:80
+    what2grow:
+        build: ./what2grow
+        ports:
+          - 8080
+        volumes:
+          - ./what2grow:/what2grow
+        command:  node app.js
+        links:
+          - mysql_what2grow
+    update:
+        build: ./update
+        ports:
+          - 3000
+        volumes:
+          - ./update:/update
+        command:  node app.js
+        links:
+          - mysql_what2grow
+    app1:
+        build: ./what2grow
+        ports:
+          - 8080
+        volumes:
+          - ./what2grow:/what2grow
+        command:  node app.js
+        links:
+          - mysql_what2grow
+    app2:
+        build: ./what2grow
+        ports:
+          - 8080
+        volumes:
+          - ./what2grow:/what2grow
+        command:  node app.js
+        links:
+          - mysql_what2grow
+    mysql_what2grow:
+      image: mysql:5.7
+      container_name: mysql_what2grow
+      volumes:
+        - ./mysql/what2grow:/docker-entrypoint-initdb.d
+        - ./tmp/mysql:/var/lib/mysql
+      environment:
+        - MYSQL_DATABASE=what2grow
+        - MYSQL_ROOT_PASSWORD=PINA#3996

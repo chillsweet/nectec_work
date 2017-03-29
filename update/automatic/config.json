@@ -1,0 +1,17 @@
+{
+  "lastupdate":"01/02/2016",
+  "state":true,
+  "server":
+    {
+      "protocol":"http",
+      "host":"localhost",
+      "path":"/data",
+      "port":"4000",
+      "method":"GET"
+    },
+  "condition":{
+    "watch":0,
+    "date":3
+  }
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- start css bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap-theme.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/css/signin.css" media="screen" title="no title">
+    <!-- end css bootstrap -->
+    <title>update</title>
+  </head>
+  <body>
+     
+    <div class="container" ng-app="myapp">
+
+
+
+
+              <form class="form-signin" ng-controller="loginController">
+                <h2 class="form-signin-heading">Admin Login</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Username" ng-model="user.username" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="user.password" required>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="send(user)">Sign in</button>
+              </form>
+
+
+
+
+    </div>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+<script>
+  /* var socket = io.connect('https://localhost:3000');
+  socket.on('news', function (data) {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+    socket.emit('subaru',{test:'test'})
+  });
+  var sum = 0;
+  socket.on('rate', function(data){
+    console.log(data);
+    socket.emit('rate-sum',{data:data});
+  });  */
+
+</script>
+<!-- start js bootstrap -->
+  <script src="/lib/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/button.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/carousel.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/alert.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/collapse.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/dropdown.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/modal.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/popover.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/scrollspy.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/tab.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/tooltip.js" charset="utf-8"></script>
+  <script src="/lib/bootstrap/js/transition.js" charset="utf-8"></script>
+<!-- end js bootstrap -->
+
+<!-- start  js angular -->
+  <script src="/lib/angular/angular.min.js" charset="utf-8"></script>
+
+  <script src="/js/app.js" charset="utf-8"></script>
+  <script src="/js/controller/login.controller.js" charset="utf-8"></script>
+<!-- end  js angular -->
+
+
+<!-- start  js jquery -->
+  <script src="/lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="/lib/jquery/dist/jquery.slim.min.js" charset="utf-8"></script>
+
+  <!-- end js jquery -->
+</html>
